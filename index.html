@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Stride – Fashion & Footwear</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="sp"></div>
+<svg width="0" height="0" style="position:absolute"><symbol id="shoe" viewBox="0 0 200 100"><path d="M10 72C10 52 30 50 45 42L58 20C68 14 80 22 92 31C110 46 130 41 160 55C185 62 193 68 193 78V84H10Z" fill="var(--a)"/><path d="M58 20L98 50L90 57L50 29Z" fill="var(--b)"/><path d="M70 30l8 7M78 24l8 7M86 38l-8-7" stroke="#fff" stroke-width="3" stroke-linecap="round"/><path d="M10 76H193V88Q193 94 185 94H18Q10 94 10 88Z" fill="#fff"/><path d="M10 82H193" stroke="var(--b)" stroke-width="3"/></symbol></svg>
+<header><span class="logo">stride.</span>
+<nav><button data-v="shop" class="on">Shop</button><button data-v="orders">My orders<span id="oc"></span></button></nav>
+<div class="hd"><button id="acct">Login / Register</button><button id="cartBtn" aria-label="Open cart">Cart (<span id="cnt">0</span>)</button></div></header>
+<div id="bn" hidden></div>
+<div id="vShop">
+<div class="hr"><div><h1 id="h1" aria-label="Fresh fits. Every Friday."></h1><p>Shirts, tees, jeans, hoodies, jackets and sneakers. Free delivery above ₹1,499 and 30-day easy returns.</p><a class="cta mag" href="#shop" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'});return false">Shop the drop</a><br><span class="live"><span class="dot"></span><span><b id="viewers">128</b> people are shopping right now</span></span></div><div class="stage" id="stg"></div></div>
+<div class="marq"><div id="mq"></div></div><div class="marq b"><div id="mq2"></div></div>
+<section id="shop"><h2 class="rv">Shop by type</h2><div class="types rv" id="types"></div>
+<div class="tools rv"><input id="q" type="search" placeholder="Search shirts, jeans, hoodies…" aria-label="Search"><select id="sort" aria-label="Sort"><option value="feat">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option><option value="top">Top rated</option></select><button class="chip" id="wl">♥ Wishlist</button></div>
+<p class="mu" id="res"></p><div class="grid" id="grid"></div></section>
+</div>
+<div id="vOrders" hidden></div>
+<div id="vAdmin" hidden></div>
+<footer>Stride demo store · prices in ₹</footer>
+<div id="toast" role="status"></div>
+<aside id="drawer" aria-label="Cart"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:1.6rem">Your cart</h2><button id="close" aria-label="Close cart" style="font-size:1.6rem">✕</button></div><div id="fd" class="fdm"></div><div id="items"></div><div class="sm"><span>Subtotal</span><span id="sb">₹0</span></div><div class="sm"><span>Delivery</span><span id="sh">₹0</span></div><div class="total"><span>Total</span><span id="tot">₹0</span></div><button class="cta" style="width:100%;text-align:center;border:0" id="buy">Place order</button></aside>
+<script src="app.js"></script>
+</body>
+</html>
